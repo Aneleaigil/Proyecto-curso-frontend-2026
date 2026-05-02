@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <link rel="stylesheet" href="style.css">
+ <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TAREA 1</title>
+</head>
+<body>
+
+  <!-- HEADER -->  
+  <div class="header">
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+   <a class="navbar-brand" href=""><img src="assets/logo.svg" alt="logo del sitio"/></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Aplicación</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Nuestros servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Novedades</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  </div>
+
+<!--CARRUSEL-->
+ <div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets/Hero Carousel Section.png" class="d-block w-100" alt="jardin pequeño">
+      <div class="carousel-caption d-none d-md-block">
+        <h2>Hidratación inteligente para su paisaje</h2>
+        <p> Aprovecha la tecnología agrícola de precisión para asegurar que su ecosistema
+          prospere mediante la automatización inteligente y el análisis de datos en tiempo real.</p>
+      </div>
+    </div>
+    <div class="carousel-item ">
+      <img src="assets/imagen-1.webp" class="d-block w-100" alt="jardin sustentable">
+      <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
+        <h2>Diseños basados en tu clima y suelo</h2>
+        <p> Ahorra en el recambio de plantas y aprovechas las estaciones con informacion del clima en tu ciudad</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="assets/imagen-3.png" class="d-block w-100" alt="jardin moderno">
+      <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
+        <h2>Ahorra en agua y lleva el control de tu consumo hidrico </h2>
+        <p> Descarga y prueba nuestra app y ahorra tiempo y dinero en el cuidado de tu jardin o huerto.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div> 
+
+  <!--INFORMATIVE-SECTION-->
+  
+  <div class="container mt-5">
+    <div class="row align-items-center justify-content-center g-4">  
+      
+      <div class="col-12 col-md-5">
+        <img class="img-fluid rounded-4" src="assets/control de humedad.png" alt="planta con indicador de humedad 68%">
+      </div> 
+  
+      <div class="col-12 col-md-6">
+        <h3>Precisión inteligente para tu jardín</h3>
+        <p>Combinamos factores ambientales locales para crear un programa de riego personalizado para cada centímetro de su terreno.</p>
+        
+        <div class="row contenido-badges g-4 mt-2">
+          
+          <div class="col-12 col-sm-6 mt-3 mt-sm-0">
+            <div class="card-body  p-4 rounded-4 shadow-sm h-100">
+              <img src="assets/icon-temp.png" alt="icono de temperatura" class="mb-3">
+              <h5 class="title-badge">Sincronización climática</h5>
+              <p class="card-text small">Adapta los programas de riego según la humedad y el calor en tiempo real.</p>
+            </div>
+          </div>
+  
+          <div class="col-12 col-sm-6 mt-3 mt-sm-0">
+            <div class="card-body p-4 rounded-4 shadow-sm h-100">
+              <img src="assets/icon-analisis.png" alt="icono de análisis de tierra" class="mb-3">
+              <h5 class="title-badge">Análisis del suelo</h5>
+              <p class="card-text small">Monitorea los niveles de tu pH y nutrientes en tiempo real.</p>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div> 
+  </div>
+ 
+<!---CARDS--->
+
+<div class="container my-5">
+  <div class="row justify-content-end g-4">
+    
+    <div class="col-12 col-md-4">
+      <div class="card h-100 shadow-sm">
+        <img src="assets/Interfaz digital.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Seguimiento climatico</h5>
+          <p class="card-text">El pronóstico meteorológico hiperlocal garantiza que su sistema se detenga
+            durante la lluvia y se active durante las olas de calor automáticamente.</p>
+          <!--a href="#" class="btn btn-primary">Conocer más</a-->
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4">
+      <div class="card h-100 shadow-sm">
+        <img src="assets/Detalle del suelo.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Analisis del suelo</h5>
+          <p class="card-text">Sensores avanzados en la zona donde tiene sus plantas, se mide la humedad cada 60 segundos para
+            prevenir tanto el estrés por sequía como la pudrición de las raíces.</p>
+          <!--a href="#" class="btn btn-primary">Go somewhere</a-->
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4">
+      <div class="card h-100 shadow-sm">
+        <img src="assets/Gotas de agua.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Flujo de Precisión</h5>
+          <p class="card-text">Válvulas de presión variable suministran el volumen exacto de agua necesario para
+            cada zona específica de plantas,reduciendo el desperdicio.</p>
+          <!--a href="#" class="btn btn-primary">Go somewhere</a-->
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!--FOOTER-->
+ 
+<div class="footer row justify-content-center align-items-center g-4 mt-4">
+
+  <div class="footer-item col-12 col-md-3 text-center">
+    <a class="mb-3 d-block" href="" target="_blank">Contáctanos</a>
+  </div>
+
+  <div class="footer-item col-12 col-md-3 text-center">
+    <a class="mb-3 d-block" href="" target="_blank">Privacidad</a>
+  </div>
+
+  <div class="footer-item col-12 col-md-3 text-center">
+    <a class="mb-3 d-block" href="" target="_blank">Términos y condiciones de uso</a>
+  </div>
+</div>
+
+<div class="sub-footer col-12 text-center">
+  <p class="mb-0 text-secondary">© 2024 JardinSmart. Todos los derechos reservados.</p>
+</div>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
+
+</html>
+ 
