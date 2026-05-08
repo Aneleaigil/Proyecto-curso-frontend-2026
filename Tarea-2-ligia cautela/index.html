@@ -2,19 +2,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <title>Tarea 2</title>
 </head>
 <body>
-    <header>
-        <nav>
-        <ul>
-            <li><p>home</p></li>
-            <li><p>about</p></li>
-            <li><p>contact</p></li> 
-            <li><p>blog</p></li>
+<header>
+    <div class="header__container">
+        <div class="header__logo">
+            <img src="assets/imagenes/logo.svg" alt="logo del sitio"/>
+        </div>
+
+        <!-- Icono de bar menu (Toggle) -->
+  <button class="header__toggle" aria-label="Abrir menú">
+    <span class="material-symbols-outlined">menu</span>
+  </button>
+
+    <!--navbar o menu de navegación-->
+        <nav class="header__nav  header__nav--collapsed">
+        <ul class="header__menu">
+            <li class="header__item"><a href="#" class="header__link">Nuestros servicios</a></li>
+            <li class="header__item"><a href="#" class="header__link">Blog</a></li>
+            <li class="header__item"><a href="#" class="header__link">Tienda</a></li> 
+            <li class="header__item"><a href="#" class="header__link">Aplicación</a></li>  
         </ul>
-        </nav>
-    </header>
-    
+       </nav>
+    </div>
+</header>
+
+
+<!--CARRUSEL-->
+<section class="slider" id="main-slider">
+    <!-- Indicadores -->
+    <div class="slider__indicators">
+        <button class="slider__dot slider__dot--active" data-slide="0"></button>
+        <button class="slider__dot" data-slide="1"></button>
+        <button class="slider__dot" data-slide="2"></button>
+    </div>
+
+    <!-- Contenedor de slides -->
+    <div class="slider__inner">
+
+        <!-- Slide 1 -->
+        <article class="slider__item slider__item--active">
+            <img src="assets/imagenes/Hero Carousel Section.png" alt="jardin pequeño" class="slider__image">
+            <div class="slider__caption">
+                <h2 class="slider__title">Hidratación inteligente para su paisaje</h2>
+                <p class="slider__text">Aprovecha la tecnología agrícola de precisión para asegurar que su ecosistema
+                    prospere mediante la automatización inteligente<br> el análisis de datos en tiempo real.</p> 
+            </div>
+        </article>
+
+        <!-- Slide 2 -->
+        <article class="slider__item">
+            <img src="assets/imagenes/imagen-1.webp" alt="jardin sustentable" class="slider__image">
+            <div class="slider__caption slider__caption--highlighted">
+                <h2 class="slider__title">Diseños basados en tu clima y suelo</h2>
+                <p class="slider__text">Ahorra en el recambio de plantas y aprovechas las estaciones con informacion del clima en tu ciudad</p>
+            </div>
+        </article>
+
+        <!-- Slide 3 -->
+        <article class="slider__item">
+            <img src="assets/imagenes/imagen-3.png" alt="jardin moderno" class="slider__image">
+            <div class="slider__caption slider__caption--highlighted">
+                <h2 class="slider__title">Ahorra en agua y lleva el control de tu consumo hidrico</h2>
+                <p class="slider__text">Descarga y prueba nuestra app y ahorra tiempo y dinero en el cuidado de tu jardin o huerto.</p>
+            </div>
+        </article>
+    </div>
+
+    <!-- Controles -->
+    <button class="slider__control slider__control--prev"><span class="material-symbols-outlined">
+chevron_left</span></button>
+    <button class="slider__control slider__control--next"><span class="material-symbols-outlined">
+        chevron_right
+        </span></button>
+</section>
+  
+  <!--INFORMATIVE-SECTION-->
+
+    <section class="informative">
+        <div class="informative__image--container"><img src="assets/imagenes/control de humedad.png" class="informative__image">
+        </div>
+
+      <article class="informative__card">
+        <div class="informative__text">           
+        <h3 class="informative__title">Precisión inteligente para tu jardín</h3>
+        <p class="informative__description">Nuestra tecnología principal sincroniza los datos del microclima local con el
+            análisis del suelo en tiempo real. Se acabaron las conjeturas: solo hidratación
+            optimizada científicamente.</p>
+        </div>
+       
+        <div class="badges">
+            <div class="badges__card">
+                <div class="badges__header-card">
+                    <img src="assets/imagenes/icon-temp.png" alt="icono de temperatura" class="badges__icon">
+                <p class="badges__title">Sincronización climática</p>
+                </div>
+                <p class="badges__text">Adapta los programas de riego según la humedad y el calor en tiempo real.</p>
+              </div>
+
+              <div class="badges__card">
+                <div class="badges__header-card">
+                <img src="assets/imagenes/icon-analisis.png" alt="icono de análisis de tierra" class="card-img">
+                <p class="badges__title">Análisis del suelo</p>
+                </div>
+                <p class="badges__text">Monitorea los niveles de tu pH y nutrientes en tiempo real.</p>
+             </div>
+        </div>
+      </article>
+    </section>
+
+     <!--SECTION CARDS FEATURES-->
+
+<section class="features">
+
+    <div class="features__header">
+        <h3 class="features__title">Nuestro sistema esta pensando para ayudarte a mantener un lindo jardin</h3>
+        <p class="features__description">Tres pilares del sistema diseñados para brindarle un control absoluto sobre tu jardin.</p>
+    </div>
+
+  <div class="features__grid">
+    <article class="card">
+        <img src="assets/imagenes/icon-cloud.svg" alt="icono de grama" class="features-icon">
+        <img src="assets/imagenes/Interfaz digital.png" alt="imagen de tierra" class="card__img">
+        <h3 class="card__title">Análisis del suelo</h3>
+        <p class="card__text">Monitorea los niveles de tu pH y nutrientes en tiempo real.</p>
+    </article>
+
+    <article class="card">
+        <img src="assets/imagenes/icon-grass.svg" alt="icono de grama" class="features-icon">
+        <img src="assets/imagenes/Detalle del suelo.png" alt="icono de temperatura" class="card__img">
+        <h3 class="card__title">Sincronización climática</h3>
+        <p class="card__text">Adapta los programas de riego según la humedad y el calor en tiempo real.</p>
+    </article>
+    <article class="card">
+        <img src="assets/imagenes/icon-waves.svg" alt="icono de grama" class="features-icon">
+        <img src="assets/imagenes/Gotas de agua.png" alt="icono de temperatura" class="card__img">
+        <h3 class="card__title">Sincronización climática</h3>
+        <p class="card__text">Adapta los programas de riego según la humedad y el calor en tiempo real.</p>
+    </article>
+  </div>
+
+</section>
+
+<!--FOOTER-->
+
+<footer class="footer">
+    <!-- Bloque de navegación con Grid -->
+    <div class="footer__nav">
+        <ul class="footer__links">
+            <li class="footer__link-item"><a href="#" class="footer__link">Contacto</a></li>
+            <li class="footer__link-item"><a href="#" class="footer__link">Privacidad</a></li>
+            <li class="footer__link-item"><a href="#" class="footer__link">Términos y condiciones de uso</a></li>
+        </ul>
+    </div>
+
+    <!-- Bloque inferior oscuro -->
+    <div class="footer__bottom">
+        <p class="footer__copyright">© 2024 JardinSmart. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
 </body>
+<script src="javascript/script.js"></script>
+
 </html>
